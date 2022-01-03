@@ -1,0 +1,23 @@
+.card-table{
+  padding: 5rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns:  repeat(1,auto);
+  grid-template-rows: repeat(10,5rem);
+}
+
+.card-row{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+    $size: 5.5rem;
+    width: $size;
+    height: $size;
+    opacity: 90%;
+    background-color: rgb(73, 7, 7);
+    border-radius: 1rem;
+    border-color: midnightblue;
+    border-style: solid;
+  }
