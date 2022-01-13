@@ -1,9 +1,81 @@
-.card-table{
-  padding: 5rem;
+.card-table-cards{
   display: grid;
-  grid-gap: 2rem;
+  place-items: center;
   grid-template-columns:  repeat(1,auto);
-  grid-template-rows: repeat(10,5rem);
+  grid-template-rows: repeat(15,auto);
+  margin-left: 18rem;
+  background: linear-gradient(rgba(210,100,101,0.7), rgba(145,152,229,0.7));
+  border-radius: 5rem;
+  padding: 10rem;
+  margin-top: 5rem;
+  width: auto;
+}
+
+.App{
+width:70%;
+}
+
+.wrapper{
+  background-image: url("background.jpeg");
+  background-size: 100%;
+  width:100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+.score{
+  color:white;
+}
+
+.hiscore{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sideBar{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 12rem; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: linear-gradient(rgba(210,100,101,0.7), rgba(145,152,229,0.7));; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 5rem;
+  border-style: solid;
+  border-right: 10px;
+
+  button{
+    padding:1rem;
+    background-color:moccasin;
+    border-radius: 2rem;
+    opacity: 0.8;
+  }
+
+  .custom-button{
+    padding:1rem;
+    background-color:moccasin;
+    border-radius: 2rem;
+    opacity: 0.8;
+    display:flex;
+    justify-content: center;
+  }
+
+  .custom-button:hover{
+    padding:1rem;
+    background-color:rgb(126, 105, 69);
+    border-radius: 2rem;
+    opacity: 0.8;
+    display:flex;
+    justify-content: center;
+  }
+
 }
 
 .card-row{
@@ -11,13 +83,161 @@
   justify-content: space-evenly;
 }
 
+
 .card {
-    $size: 5.5rem;
-    width: $size;
-    height: $size;
-    opacity: 90%;
-    background-color: rgb(73, 7, 7);
-    border-radius: 1rem;
-    border-color: midnightblue;
-    border-style: solid;
+  $size: 5.5rem;
+  width: $size;
+  height: $size;
+  margin: 1rem;
+  opacity: 90%;
+  border-radius: 1rem;
+
+}
+
+
+.card .scorpion
+{
+  border-color: green;
+  background-image: url("scorpion.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+
+}
+
+.card .finek
+{
+  border-color: green;
+  background-image: url("finek.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .centipede
+{
+  border-color: green;
+  background-image: url("centipede.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .lion
+{
+  border-color: green;
+  background-image: url("lion.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .wolf
+{
+  border-color: green;
+  background-image: url("wolf.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .sphinx
+{
+  border-color: green;
+  background-image: url("sphinx.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .muaddib
+{
+  border-color: green;
+  background-image: url("muaddib.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .dragon
+{
+  border-color: green;
+  background-image: url("dragon.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .elemental
+{
+  border-color: green;
+  background-image: url("elemental.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+}
+
+.card .desertsnake
+{
+  border-color: green;
+  background-image: url("desertsnake.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+  border-style: solid;
+
+}
+
+.card .worm{
+  border-color: green;
+  border-style: solid;
+  background-image: url("worm.PNG");
+  background-size: cover;
+  border-radius: 0.8rem;
+  height:100%;
+  width:100%;
+
+}
+
+.card .card-back{
+    
+    border-radius: 0.8rem;
+    height:100%;
+      width:100%;
+      background-image: url("sunset.PNG");
+      background-size:cover;
   }
+
+  .card .card-back:hover{
+    
+    border-color: rgb(117, 154, 233);
+    border-style: solid;
+    border-radius: 0.8rem;
+    height:100%;
+      width:100%;
+      background-image: url("sunset.PNG");
+      background-size:cover;
+    
+      
+  }
+
+
